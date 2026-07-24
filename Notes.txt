@@ -1,0 +1,7157 @@
+
+/*
+
+================================================================================
+                         C++ MASTER NOTES
+================================================================================
+
+Author      : Mayank Nahata
+Language    : C++
+Version     : 1.0
+
+================================================================================
+                             LESSON - 1
+                 INTRODUCTION TO OBJECT ORIENTED PROGRAMMING
+================================================================================
+
+📖 Definition
+-------------
+
+Object-Oriented Programming (OOP) is a programming paradigm that organizes
+programs using "Objects" instead of only functions.
+
+An Object contains both:
+
+    1. Data (Variables)
+    2. Functions (Member Functions)
+
+The main purpose of OOP is to make programs more organized, reusable,
+secure, and easy to maintain.
+
+--------------------------------------------------------------------------------
+
+⭐ Why was OOP introduced?
+-------------------------
+
+Before OOP, programmers used Procedural Programming.
+
+Example:
+
+main()
+{
+    addStudent();
+    deleteStudent();
+    updateStudent();
+    searchStudent();
+    printStudent();
+
+    addTeacher();
+    deleteTeacher();
+    updateTeacher();
+}
+
+As the program grows, thousands of functions are created.
+
+Problems:
+
+❌ Difficult to understand
+❌ Difficult to debug
+❌ Difficult to maintain
+❌ No proper security
+❌ Code duplication
+
+To solve these problems, OOP was introduced.
+
+--------------------------------------------------------------------------------
+
+⭐ What is a Programming Paradigm?
+---------------------------------
+
+Programming Paradigm means
+
+"A style or method of writing programs."
+
+Examples
+
+1. Procedural Programming
+2. Object-Oriented Programming
+3. Functional Programming
+4. Logical Programming
+
+--------------------------------------------------------------------------------
+
+⭐ Characteristics of OOP
+-------------------------
+
+✔ Uses Classes and Objects
+
+✔ Supports Code Reusability
+
+✔ Supports Data Hiding
+
+✔ Provides Security
+
+✔ Easy to Maintain
+
+✔ Easy to Expand
+
+✔ Easy Debugging
+
+✔ Real World Modeling
+
+--------------------------------------------------------------------------------
+
+⭐ Real-Life Example
+-------------------
+
+Imagine a Mobile Phone.
+
+It contains
+
+DATA
+
+Brand
+
+Model
+
+RAM
+
+Storage
+
+Battery
+
+Price
+
+It also performs
+
+FUNCTIONS
+
+Call()
+
+Message()
+
+Camera()
+
+Music()
+
+Internet()
+
+Everything belongs to one Mobile.
+
+Similarly,
+
+A Class stores
+
+Data + Functions
+
+together.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+                    MOBILE
+
+            +----------------------+
+
+              Brand
+
+              Model
+
+              RAM
+
+              Storage
+
+              Battery
+
+              Price
+
+            -----------------------
+
+              Call()
+
+              Camera()
+
+              Message()
+
+              Internet()
+
+            +----------------------+
+
+Everything is inside one object.
+
+--------------------------------------------------------------------------------
+
+⭐ Four Pillars of OOP
+---------------------
+
+1. Encapsulation
+
+Keeping Data + Functions together.
+
+------------------------------------------------
+
+2. Inheritance
+
+Acquiring properties from another class.
+
+------------------------------------------------
+
+3. Polymorphism
+
+One function, many forms.
+
+------------------------------------------------
+
+4. Abstraction
+
+Showing only necessary information.
+
+--------------------------------------------------------------------------------
+
+📝 Basic Syntax of OOP
+
+class Student
+{
+    Variables
+
+    Functions
+};
+
+--------------------------------------------------------------------------------
+
+⚙ How OOP Works
+
+Step 1
+
+Programmer creates a Class.
+
+↓
+
+Step 2
+
+Objects are created.
+
+↓
+
+Step 3
+
+Constructor initializes data.
+
+↓
+
+Step 4
+
+Functions operate on that data.
+
+↓
+
+Step 5
+
+Program executes.
+
+--------------------------------------------------------------------------------
+
+💻 Example 1
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    string name = "Mayank";
+
+    void show()
+    {
+        cout<<"Welcome "<<name;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.show();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Welcome Mayank
+
+--------------------------------------------------------------------------------
+
+💻 Example 2
+
+#include<iostream>
+using namespace std;
+
+class Car
+{
+public:
+
+    string company="Toyota";
+
+    void display()
+    {
+        cout<<"Company : "<<company;
+    }
+};
+
+int main()
+{
+    Car c;
+
+    c.display();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Company : Toyota
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages of OOP
+-------------------
+
+✔ Code Reusability
+
+✔ Better Security
+
+✔ Less Coding
+
+✔ Easy Maintenance
+
+✔ Better Team Work
+
+✔ Real World Representation
+
+✔ Easy Testing
+
+✔ Easy Debugging
+
+--------------------------------------------------------------------------------
+
+⭐ Disadvantages of OOP
+----------------------
+
+❌ Larger program size
+
+❌ Slightly slower than procedural programming
+
+❌ Requires proper design
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+-----------------
+
+❌ Class = Object
+
+Wrong
+
+Class and Object are different.
+
+------------------------------------------------
+
+❌ OOP means only Classes.
+
+Wrong
+
+OOP is a complete programming concept.
+
+------------------------------------------------
+
+❌ Functions exist outside class.
+
+In OOP,
+
+Functions usually belong to a class.
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+----------------------
+
+Q1. What is OOP?
+
+Q2. Why was OOP introduced?
+
+Q3. What are the advantages of OOP?
+
+Q4. Name the four pillars of OOP.
+
+Q5. What is the difference between Procedural Programming and OOP?
+
+Q6. Which languages support OOP?
+
+Answer
+
+C++
+
+Java
+
+Python
+
+C#
+
+Kotlin
+
+Swift
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+---------------------
+
+Easy
+
+1. Define OOP.
+
+2. Write four advantages of OOP.
+
+3. Name four pillars of OOP.
+
+Medium
+
+4. Explain OOP using a real-life example.
+
+5. Difference between Procedural Programming and OOP.
+
+Hard
+
+6. Explain complete working of OOP with diagram.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+-------------
+
+1. Write definitions of
+
+Class
+
+Object
+
+Encapsulation
+
+Inheritance
+
+Polymorphism
+
+Abstraction
+
+2. Draw a diagram of
+
+Student
+
+Teacher
+
+Car
+
+Mobile
+
+using OOP concepts.
+
+3. List five real-world examples of OOP.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+----------
+
+✔ OOP stands for Object-Oriented Programming.
+
+✔ OOP organizes programs using Classes and Objects.
+
+✔ Data and Functions remain together.
+
+✔ OOP makes programs secure.
+
+✔ OOP supports code reuse.
+
+✔ OOP is based on four pillars.
+
+✔ OOP is widely used in modern software development.
+
+--------------------------------------------------------------------------------
+
+🧠 Remember
+
+Class      → Blueprint
+
+Object     → Real Entity
+
+Variable   → Data
+
+Function   → Behaviour
+
+Class + Object = OOP
+
+================================================================================
+                             END OF LESSON - 1
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+                                LESSON - 2
+                             CLASS AND OBJECT
+================================================================================
+
+📖 Definition
+-------------
+
+A Class is a user-defined data type that acts as a blueprint or template
+for creating objects.
+
+An Object is a real instance (copy) of a class that occupies memory.
+
+Simply,
+
+Class  → Blueprint
+
+Object → Real Thing
+
+--------------------------------------------------------------------------------
+
+⭐ Key Points
+------------
+
+✔ Class is a template.
+
+✔ Object is an instance of a class.
+
+✔ A class does not occupy memory until an object is created.
+
+✔ Memory is allocated only when an object is created.
+
+✔ One class can create many objects.
+
+--------------------------------------------------------------------------------
+
+❓ Why do we need Classes?
+-------------------------
+
+Suppose we want to store information of 100 students.
+
+Without Class
+
+name1
+roll1
+marks1
+
+name2
+roll2
+marks2
+
+name3
+roll3
+marks3
+
+...
+
+This becomes very difficult to manage.
+
+Using Class
+
+class Student
+{
+    name
+    roll
+    marks
+};
+
+Now we can create
+
+Student s1;
+Student s2;
+Student s3;
+
+The code becomes clean and reusable.
+
+--------------------------------------------------------------------------------
+
+🧠 Real-Life Analogy
+-------------------
+
+Suppose a company manufactures cars.
+
+The company first prepares a DESIGN.
+
+That design is called
+
+CLASS
+
+Every car manufactured using that design is called
+
+OBJECT
+
+Example
+
+                Car Design
+                    │
+         -----------------------
+         │         │          │
+      Car 1      Car 2      Car 3
+
+Class is one.
+
+Objects can be many.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+                    CLASS
+
+              +----------------+
+
+                Name
+
+                Roll Number
+
+                Marks
+
+                Display()
+
+              +----------------+
+
+                     │
+
+         ----------------------------
+
+         │             │            │
+
+      Student1     Student2     Student3
+
+        Object       Object       Object
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+---------
+
+class Student
+{
+public:
+
+    string name;
+    int roll;
+
+    void display()
+    {
+        cout<<"Hello";
+    }
+
+};
+
+Creating Object
+
+Student s1;
+
+--------------------------------------------------------------------------------
+
+⚙ Working
+----------
+
+Step 1
+
+Programmer creates a class.
+
+↓
+
+Step 2
+
+Compiler stores class definition.
+
+↓
+
+Step 3
+
+Object is created.
+
+↓
+
+Step 4
+
+Memory is allocated.
+
+↓
+
+Step 5
+
+Member variables and member functions are accessed using
+the dot (.) operator.
+
+--------------------------------------------------------------------------------
+
+💻 Example 1
+------------
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    string name="Mayank";
+    int roll=16;
+
+    void display()
+    {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Roll : "<<roll;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.display();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+---------
+
+Name : Mayank
+
+Roll : 16
+
+--------------------------------------------------------------------------------
+
+💻 Example 2
+------------
+
+#include<iostream>
+using namespace std;
+
+class Car
+{
+public:
+
+    string company="Toyota";
+
+    int price=1500000;
+
+    void show()
+    {
+        cout<<"Company : "<<company<<endl;
+        cout<<"Price : "<<price;
+    }
+};
+
+int main()
+{
+    Car c;
+
+    c.show();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+---------
+
+Company : Toyota
+
+Price : 1500000
+
+--------------------------------------------------------------------------------
+
+💻 Example 3
+------------
+
+Creating Multiple Objects
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    string name;
+    int roll;
+};
+
+int main()
+{
+    Student s1,s2;
+
+    s1.name="Mayank";
+    s1.roll=1;
+
+    s2.name="Rahul";
+    s2.roll=2;
+
+    cout<<s1.name<<endl;
+    cout<<s2.name;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+---------
+
+Mayank
+
+Rahul
+
+--------------------------------------------------------------------------------
+
+⭐ Memory Representation
+-----------------------
+
+Class
+
+Student
+
+↓
+
+No Memory
+
+↓
+
+Student s1;
+
+↓
+
+Memory Allocated
+
+----------------------------------
+
+Object s1
+
+Name
+
+Roll
+
+----------------------------------
+
+Student s2;
+
+----------------------------------
+
+Object s2
+
+Name
+
+Roll
+
+----------------------------------
+
+Each object has its own copy of data members.
+
+--------------------------------------------------------------------------------
+
+⭐ Accessing Members
+-------------------
+
+Use Dot Operator
+
+ObjectName.MemberName
+
+Example
+
+Student s;
+
+s.name="Mayank";
+
+s.roll=12;
+
+s.display();
+
+--------------------------------------------------------------------------------
+
+⭐ Difference Between Class and Object
+-------------------------------------
+
+CLASS
+
+✔ Blueprint
+
+✔ Logical Entity
+
+✔ No Memory
+
+✔ Declared Once
+
+✔ Used to Create Objects
+
+-------------------------------------
+
+OBJECT
+
+✔ Instance
+
+✔ Physical Entity
+
+✔ Occupies Memory
+
+✔ Can Create Many
+
+✔ Used to Access Members
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages
+------------
+
+✔ Code Reusability
+
+✔ Easy Management
+
+✔ Better Organization
+
+✔ Easy Maintenance
+
+✔ Real World Modeling
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+-----------------
+
+❌ Forgetting Semicolon
+
+Wrong
+
+class Student
+{
+
+}
+
+Correct
+
+class Student
+{
+
+};
+
+------------------------------------------------
+
+❌ Accessing member without object
+
+Wrong
+
+name="Mayank";
+
+Correct
+
+Student s;
+
+s.name="Mayank";
+
+------------------------------------------------
+
+❌ Confusing Class and Object
+
+Class ≠ Object
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+----------------------
+
+Q1. What is a Class?
+
+Ans.
+A class is a blueprint used to create objects.
+
+------------------------------------------------
+
+Q2. What is an Object?
+
+Ans.
+An object is an instance of a class.
+
+------------------------------------------------
+
+Q3. Does a class occupy memory?
+
+Ans.
+No.
+
+------------------------------------------------
+
+Q4. When is memory allocated?
+
+Ans.
+When an object is created.
+
+------------------------------------------------
+
+Q5. Can one class create multiple objects?
+
+Ans.
+Yes.
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+---------------------
+
+Easy
+
+1. Create Student class.
+
+2. Create Car class.
+
+3. Create Book class.
+
+Medium
+
+4. Create Employee class with four variables.
+
+5. Create three objects and display data.
+
+Hard
+
+6. Create School class.
+
+7. Create Library class.
+
+8. Create Mobile class.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+-------------
+
+1. Create a Student class.
+
+2. Create five Student objects.
+
+3. Store
+
+Name
+
+Roll
+
+Marks
+
+4. Display all information.
+
+5. Create a Car class and create three different cars.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+----------
+
+✔ Class is a Blueprint.
+
+✔ Object is an Instance.
+
+✔ Class does not occupy memory.
+
+✔ Object occupies memory.
+
+✔ Multiple objects can be created from one class.
+
+✔ Members are accessed using Dot Operator (.).
+
+✔ Class is the foundation of Object-Oriented Programming.
+
+================================================================================
+                              END OF LESSON - 2
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+                               LESSON - 3
+                           ACCESS SPECIFIERS
+================================================================================
+
+📖 Definition
+-------------
+
+Access Specifiers are keywords that control the accessibility (visibility)
+of data members and member functions inside a class.
+
+They decide who can access the members of a class.
+
+There are three access specifiers in C++:
+
+1. Public
+2. Private
+3. Protected
+
+--------------------------------------------------------------------------------
+
+⭐ Why do we need Access Specifiers?
+-----------------------------------
+
+Suppose you create a Bank Account class.
+
+Everyone should NOT be allowed to change the account balance directly.
+
+Wrong
+
+Account.balance = 10000000;
+
+Instead,
+
+Only specific functions should modify the balance.
+
+Access Specifiers provide SECURITY.
+
+--------------------------------------------------------------------------------
+
+⭐ Types of Access Specifiers
+----------------------------
+
+1. Public
+
+Members can be accessed from anywhere.
+
+Example
+
+class Student
+{
+public:
+    string name;
+};
+
+Student s;
+s.name = "Mayank";
+
+------------------------------------------------
+
+2. Private
+
+Members can be accessed ONLY inside the same class.
+
+Example
+
+class Student
+{
+private:
+    int marks;
+};
+
+Student s;
+
+// s.marks = 90; ❌ Error
+
+------------------------------------------------
+
+3. Protected
+
+Members can be accessed
+
+✔ Inside the class
+
+✔ Inside derived (child) classes
+
+❌ Not from outside the class
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+                     CLASS
+
+            +----------------------+
+
+            PUBLIC
+
+            Accessible Everywhere
+
+            ----------------------
+
+            PRIVATE
+
+            Accessible Only
+            Inside Same Class
+
+            ----------------------
+
+            PROTECTED
+
+            Accessible in
+            Child Classes
+
+            +----------------------+
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+---------
+
+class Student
+{
+
+public:
+
+    string name;
+
+private:
+
+    int marks;
+
+protected:
+
+    int roll;
+
+};
+
+--------------------------------------------------------------------------------
+
+⚙ Working
+----------
+
+Object Created
+
+↓
+
+Public members
+
+↓
+
+Accessible using Dot Operator
+
+----------------------------------
+
+Private members
+
+↓
+
+Cannot be accessed directly
+
+----------------------------------
+
+Protected members
+
+↓
+
+Used mainly in Inheritance
+
+--------------------------------------------------------------------------------
+
+💻 Example 1 (Public)
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+    string name;
+};
+
+int main()
+{
+    Student s;
+
+    s.name = "Mayank";
+
+    cout << s.name;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Mayank
+
+--------------------------------------------------------------------------------
+
+💻 Example 2 (Private)
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+private:
+    int marks;
+
+public:
+    void setMarks(int m)
+    {
+        marks = m;
+    }
+
+    void display()
+    {
+        cout << marks;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.setMarks(95);
+
+    s.display();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+95
+
+--------------------------------------------------------------------------------
+
+💻 Example 3 (Protected)
+
+#include<iostream>
+using namespace std;
+
+class Person
+{
+protected:
+    int age = 20;
+};
+
+class Student : public Person
+{
+public:
+    void show()
+    {
+        cout << age;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.show();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+20
+
+--------------------------------------------------------------------------------
+
+⭐ Difference Between Public, Private and Protected
+
+                 PUBLIC      PRIVATE      PROTECTED
+
+Inside Class       ✔            ✔             ✔
+
+Outside Class      ✔            ✘             ✘
+
+Child Class        ✔            ✘             ✔
+
+--------------------------------------------------------------------------------
+
+⭐ Default Access Specifier
+
+class
+
+↓
+
+Private
+
+--------------------------
+
+struct
+
+↓
+
+Public
+
+Example
+
+class A
+{
+    int x;
+};
+
+Here,
+
+x is PRIVATE by default.
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages
+
+✔ Data Security
+
+✔ Prevents Unauthorized Access
+
+✔ Better Program Design
+
+✔ Supports Encapsulation
+
+✔ Easy Maintenance
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+-----------------
+
+❌ Accessing Private Variable Directly
+
+Student s;
+
+s.marks = 90;
+
+Wrong
+
+---------------------------------------
+
+Correct
+
+s.setMarks(90);
+
+---------------------------------------
+
+❌ Forgetting that class members are
+Private by Default.
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+----------------------
+
+Q1. What are Access Specifiers?
+
+Ans.
+Keywords that control accessibility.
+
+------------------------------------------------
+
+Q2. How many Access Specifiers are there?
+
+Ans.
+
+Three
+
+Public
+
+Private
+
+Protected
+
+------------------------------------------------
+
+Q3. Which Access Specifier is most secure?
+
+Ans.
+
+Private
+
+------------------------------------------------
+
+Q4. Which Access Specifier is used most?
+
+Ans.
+
+Private
+
+------------------------------------------------
+
+Q5. What is the default access specifier of a class?
+
+Ans.
+
+Private
+
+------------------------------------------------
+
+Q6. What is the default access specifier of a struct?
+
+Ans.
+
+Public
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+---------------------
+
+Easy
+
+1. Create a Public variable.
+
+2. Create a Private variable.
+
+3. Print Public data.
+
+Medium
+
+4. Create Student class using Private variables.
+
+5. Access data using member functions.
+
+Hard
+
+6. Create Bank Account using Private balance.
+
+7. Create Employee Management System.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+-------------
+
+1. Create Student class.
+
+2. Make Name Public.
+
+3. Make Marks Private.
+
+4. Create Functions to set and display Marks.
+
+5. Explain why Private is safer than Public.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+----------
+
+✔ Public → Accessible Everywhere.
+
+✔ Private → Accessible Only Inside Class.
+
+✔ Protected → Accessible Inside Child Class.
+
+✔ Private provides Security.
+
+✔ Class default = Private.
+
+✔ Struct default = Public.
+
+✔ Access Specifiers help achieve Encapsulation.
+
+================================================================================
+                           END OF LESSON - 3
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+                               LESSON - 4
+                           GETTER & SETTER
+================================================================================
+
+📖 Definition
+-------------
+
+Getter and Setter are member functions used to access and modify
+private data members of a class.
+
+They provide controlled access to private variables.
+
+Getter → Used to Read (Get) Data
+
+Setter → Used to Modify (Set) Data
+
+--------------------------------------------------------------------------------
+
+⭐ Why do we need Getter & Setter?
+---------------------------------
+
+Private variables cannot be accessed directly from outside the class.
+
+Example
+
+class Student
+{
+private:
+    int marks;
+};
+
+int main()
+{
+    Student s;
+
+    s.marks = 95;     // ❌ Error
+}
+
+Since marks is private, we need special functions.
+
+Setter → Stores value.
+
+Getter → Returns value.
+
+--------------------------------------------------------------------------------
+
+🧠 Real-Life Analogy
+-------------------
+
+Imagine an ATM Machine.
+
+You cannot directly open the ATM and change your account balance.
+
+Instead,
+
+You interact using
+
+✔ Deposit
+
+✔ Withdraw
+
+✔ Check Balance
+
+Similarly,
+
+Private Variables
+
+↓
+
+Cannot be accessed directly.
+
+↓
+
+Getter & Setter act as the authorized gateway.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+                 USER
+
+                   │
+
+          setMarks(95)
+
+                   │
+
+                   ▼
+
+            +----------------+
+
+            |    SETTER      |
+
+            +----------------+
+
+                   │
+
+                   ▼
+
+         Private Variable (marks)
+
+                   ▲
+
+                   │
+
+            +----------------+
+
+            |    GETTER      |
+
+            +----------------+
+
+                   │
+
+           getMarks()
+
+                   │
+
+                   ▼
+
+                 USER
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages
+------------
+
+✔ Data Security
+
+✔ Data Hiding
+
+✔ Controlled Access
+
+✔ Easy Validation
+
+✔ Better Encapsulation
+
+✔ Easy Maintenance
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+---------
+
+class Student
+{
+private:
+
+    int marks;
+
+public:
+
+    void setMarks(int m)
+    {
+        marks = m;
+    }
+
+    int getMarks()
+    {
+        return marks;
+    }
+};
+
+--------------------------------------------------------------------------------
+
+⚙ Working
+----------
+
+Step 1
+
+Object is created.
+
+↓
+
+Step 2
+
+Setter receives value.
+
+↓
+
+Step 3
+
+Setter stores value in private variable.
+
+↓
+
+Step 4
+
+Getter returns that value whenever required.
+
+--------------------------------------------------------------------------------
+
+💻 Example 1 (Basic Getter & Setter)
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+private:
+
+    int marks;
+
+public:
+
+    void setMarks(int m)
+    {
+        marks = m;
+    }
+
+    int getMarks()
+    {
+        return marks;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.setMarks(95);
+
+    cout<<"Marks : "<<s.getMarks();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Marks : 95
+
+--------------------------------------------------------------------------------
+
+💻 Example 2 (Teacher Example)
+
+#include<iostream>
+using namespace std;
+
+class Teacher
+{
+private:
+
+    double salary;
+
+public:
+
+    string name;
+
+    void setSalary(double s)
+    {
+        salary = s;
+    }
+
+    double getSalary()
+    {
+        return salary;
+    }
+};
+
+int main()
+{
+    Teacher t;
+
+    t.name = "Mayank";
+
+    t.setSalary(50000);
+
+    cout<<"Name   : "<<t.name<<endl;
+    cout<<"Salary : "<<t.getSalary();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Name   : Mayank
+
+Salary : 50000
+
+--------------------------------------------------------------------------------
+
+💻 Example 3 (Validation Using Setter)
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+private:
+
+    int age;
+
+public:
+
+    void setAge(int a)
+    {
+        if(a >= 5 && a <= 100)
+        {
+            age = a;
+        }
+        else
+        {
+            cout<<"Invalid Age"<<endl;
+        }
+    }
+
+    int getAge()
+    {
+        return age;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.setAge(16);
+
+    cout<<"Age : "<<s.getAge();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Age : 16
+
+--------------------------------------------------------------------------------
+
+💻 Example 4 (Bank Account)
+
+#include<iostream>
+using namespace std;
+
+class Bank
+{
+private:
+
+    double balance;
+
+public:
+
+    void deposit(double amount)
+    {
+        if(amount > 0)
+        {
+            balance += amount;
+        }
+    }
+
+    double getBalance()
+    {
+        return balance;
+    }
+};
+
+int main()
+{
+    Bank b;
+
+    b.deposit(10000);
+
+    cout<<"Balance : "<<b.getBalance();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Balance : 10000
+
+--------------------------------------------------------------------------------
+
+📊 Memory Diagram
+
+            Object Created
+
+                  │
+
+          +-----------------+
+
+          | marks = ???     |
+
+          +-----------------+
+
+                  │
+
+         setMarks(95)
+
+                  │
+
+                  ▼
+
+          +-----------------+
+
+          | marks = 95      |
+
+          +-----------------+
+
+                  │
+
+          getMarks()
+
+                  │
+
+                  ▼
+
+                95
+
+--------------------------------------------------------------------------------
+
+⭐ Difference Between Getter & Setter
+
+Getter
+
+✔ Reads Data
+
+✔ Returns Value
+
+✔ No Modification
+
+✔ Return Type Required
+
+----------------------------------------
+
+Setter
+
+✔ Stores Data
+
+✔ Modifies Value
+
+✔ Usually void
+
+✔ Takes Parameters
+
+--------------------------------------------------------------------------------
+
+⭐ Real-Life Applications
+
+✔ Banking System
+
+✔ Student Management System
+
+✔ Employee Database
+
+✔ Hospital Management
+
+✔ Library Management
+
+✔ Online Shopping
+
+Getter & Setter are used almost everywhere in software development.
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+-----------------
+
+❌ Accessing Private Variable Directly
+
+Student s;
+
+s.marks = 95;
+
+Wrong
+
+------------------------------------------------
+
+Correct
+
+s.setMarks(95);
+
+------------------------------------------------
+
+❌ Forgetting Return Statement
+
+int getMarks()
+{
+
+}
+
+Wrong
+
+Correct
+
+int getMarks()
+{
+    return marks;
+}
+
+------------------------------------------------
+
+❌ Wrong Setter
+
+void setMarks(int m)
+{
+    m = marks;
+}
+
+Wrong
+
+Correct
+
+void setMarks(int m)
+{
+    marks = m;
+}
+
+------------------------------------------------
+
+❌ Returning Wrong Variable
+
+int getMarks()
+{
+    return m;
+}
+
+Wrong
+
+Correct
+
+return marks;
+
+--------------------------------------------------------------------------------
+
+💡 Pro Tips
+-----------
+
+✔ Keep Data Members Private.
+
+✔ Use Getter only when data needs to be read.
+
+✔ Use Setter to validate data before storing.
+
+✔ Never expose sensitive variables directly.
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+----------------------
+
+Q1. What is Getter?
+
+Ans.
+A Getter is a member function used to return the value of a private variable.
+
+------------------------------------------------
+
+Q2. What is Setter?
+
+Ans.
+A Setter is a member function used to assign or modify the value of a private variable.
+
+------------------------------------------------
+
+Q3. Why do we use Getter & Setter?
+
+Ans.
+
+To achieve
+
+✔ Data Hiding
+
+✔ Security
+
+✔ Controlled Access
+
+------------------------------------------------
+
+Q4. Can Getter modify data?
+
+Ans.
+
+Generally No.
+
+Its job is only to return data.
+
+------------------------------------------------
+
+Q5. Can Setter return a value?
+
+Ans.
+
+Generally No.
+
+It usually has a void return type.
+
+------------------------------------------------
+
+Q6. Which OOP concept uses Getter & Setter?
+
+Ans.
+
+Encapsulation
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+---------------------
+
+Easy
+
+1. Create Student class using Getter & Setter.
+
+2. Create Employee class.
+
+3. Create Book class.
+
+Medium
+
+4. Create Bank Account.
+
+5. Create Mobile class.
+
+6. Validate Age.
+
+Hard
+
+7. Student Result Management System.
+
+8. ATM Machine Simulation.
+
+9. Hospital Management.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+-------------
+
+1. Create a Student class.
+
+2. Make
+
+Name
+
+Age
+
+Marks
+
+Private.
+
+3. Create Setter for all variables.
+
+4. Create Getter for all variables.
+
+5. Display Student Information.
+
+------------------------------------------------
+
+Assignment 2
+
+Create Employee Class.
+
+Store
+
+Employee Name
+
+Employee ID
+
+Salary
+
+using Getter & Setter.
+
+------------------------------------------------
+
+Assignment 3
+
+Create Bank Account.
+
+Functions
+
+Deposit()
+
+Withdraw()
+
+CheckBalance()
+
+using Getter & Setter.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+----------
+
+✔ Getter reads private data.
+
+✔ Setter modifies private data.
+
+✔ Private variables cannot be accessed directly.
+
+✔ Getter & Setter improve security.
+
+✔ They support Encapsulation.
+
+✔ Validation can be performed inside Setter.
+
+✔ Getter & Setter are widely used in professional software development.
+
+--------------------------------------------------------------------------------
+
+🧠 Remember
+
+Private Variable
+
+        ↓
+
+Setter()
+
+        ↓
+
+Stores Data
+
+        ↓
+
+Getter()
+
+        ↓
+
+Returns Data
+
+This is the safest way to access class data.
+
+================================================================================
+                           END OF LESSON - 4
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+                               LESSON - 5
+                              CONSTRUCTORS
+================================================================================
+
+📖 Definition
+-------------
+
+A Constructor is a special member function of a class that is
+automatically called whenever an object of that class is created.
+
+Its main purpose is to initialize the data members of an object.
+
+Unlike normal functions, constructors are called automatically and
+do not require an explicit function call.
+
+--------------------------------------------------------------------------------
+
+⭐ Key Points
+------------
+
+✔ Constructor name must be the same as the class name.
+
+✔ Constructors have NO return type.
+
+✔ Constructors are called automatically.
+
+✔ Constructors initialize object data.
+
+✔ Constructors can be overloaded.
+
+✔ Every class can have multiple constructors.
+
+✔ If no constructor is written, the compiler provides a Default Constructor.
+
+--------------------------------------------------------------------------------
+
+❓ Why do we need Constructors?
+-------------------------------
+
+Without Constructor
+
+class Student
+{
+public:
+
+    string name;
+    int age;
+};
+
+int main()
+{
+    Student s;
+
+    s.name = "Mayank";
+    s.age = 16;
+}
+
+Every object must be initialized manually.
+
+----------------------------------------------
+
+With Constructor
+
+Student(string n,int a)
+{
+    name = n;
+    age = a;
+}
+
+Initialization becomes automatic.
+
+--------------------------------------------------------------------------------
+
+🧠 Real-Life Analogy
+--------------------
+
+Suppose you buy a new mobile phone.
+
+Before using it,
+
+Manufacturer already provides
+
+✔ Battery
+
+✔ Screen
+
+✔ Camera
+
+✔ Software
+
+Everything is initialized.
+
+Similarly,
+
+A Constructor prepares an object before we start using it.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+                Object Created
+
+                      │
+
+                      ▼
+
+              Constructor Called
+
+                      │
+
+                      ▼
+
+           Variables Get Initialized
+
+                      │
+
+                      ▼
+
+              Object Ready To Use
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+---------
+
+class Student
+{
+public:
+
+    Student()
+    {
+
+    }
+
+};
+
+--------------------------------------------------------------------------------
+
+⭐ Rules of Constructor
+-----------------------
+
+✔ Same name as Class.
+
+✔ No Return Type.
+
+✔ Called Automatically.
+
+✔ Can Have Parameters.
+
+✔ Can Be Overloaded.
+
+✔ Cannot Be Inherited.
+
+✔ Cannot Be Virtual.
+
+--------------------------------------------------------------------------------
+
+⭐ Types of Constructors
+------------------------
+
+1. Default Constructor
+
+2. Parameterized Constructor
+
+3. Copy Constructor
+
+--------------------------------------------------------------------------------
+
+💻 Example 1 : Default Constructor
+----------------------------------
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    Student()
+    {
+        cout<<"Default Constructor Called";
+    }
+};
+
+int main()
+{
+    Student s;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Default Constructor Called
+
+--------------------------------------------------------------------------------
+
+💻 Example 2 : Default Constructor with Variables
+-------------------------------------------------
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    string name;
+    int age;
+
+    Student()
+    {
+        name = "Mayank";
+        age = 16;
+    }
+
+    void display()
+    {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Age  : "<<age;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.display();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Name : Mayank
+
+Age  : 16
+
+--------------------------------------------------------------------------------
+
+💻 Example 3 : Parameterized Constructor
+----------------------------------------
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    string name;
+    int age;
+
+    Student(string n,int a)
+    {
+        name = n;
+        age = a;
+    }
+
+    void display()
+    {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Age  : "<<age;
+    }
+};
+
+int main()
+{
+    Student s("Mayank",16);
+
+    s.display();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Name : Mayank
+
+Age  : 16
+
+--------------------------------------------------------------------------------
+
+💻 Example 4 : Constructor Overloading
+--------------------------------------
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    Student()
+    {
+        cout<<"Default Constructor"<<endl;
+    }
+
+    Student(string name)
+    {
+        cout<<"Student : "<<name<<endl;
+    }
+
+    Student(string name,int age)
+    {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Age  : "<<age<<endl;
+    }
+};
+
+int main()
+{
+    Student s1;
+
+    Student s2("Mayank");
+
+    Student s3("Mayank",16);
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Default Constructor
+
+Student : Mayank
+
+Name : Mayank
+
+Age  : 16
+
+--------------------------------------------------------------------------------
+
+📊 Memory Diagram
+
+Object Created
+
+↓
+
+Memory Allocated
+
+↓
+
+Constructor Called
+
+↓
+
+Variables Initialized
+
+↓
+
+Object Ready
+
+--------------------------------------------------------------------------------
+
+⭐ Constructor vs Normal Function
+
+Constructor
+
+✔ Same name as Class
+
+✔ No Return Type
+
+✔ Called Automatically
+
+✔ Used for Initialization
+
+--------------------------------------------
+
+Normal Function
+
+✔ Any Name
+
+✔ Return Type Allowed
+
+✔ Called Manually
+
+✔ Performs Tasks
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages
+------------
+
+✔ Automatic Initialization
+
+✔ Cleaner Code
+
+✔ Saves Time
+
+✔ Improves Readability
+
+✔ Reduces Errors
+
+✔ Supports Object-Oriented Programming
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+-----------------
+
+❌ Giving Return Type
+
+void Student()
+{
+
+}
+
+Wrong
+
+------------------------------------
+
+Correct
+
+Student()
+{
+
+}
+
+------------------------------------------------
+
+❌ Constructor Name Different from Class
+
+class Student
+{
+public:
+
+    student()
+    {
+
+    }
+};
+
+Wrong
+
+Constructor name must exactly match the class name (case-sensitive).
+
+------------------------------------------------
+
+❌ Calling Constructor Manually
+
+Student();
+
+This creates a temporary object.
+
+Correct
+
+Student s;
+
+------------------------------------------------
+
+❌ Forgetting Parameters
+
+Student s;
+
+When only
+
+Student(string,int)
+
+exists.
+
+Compiler Error.
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+----------------------
+
+Q1. What is a Constructor?
+
+Ans.
+
+A special member function automatically called when an object is created.
+
+------------------------------------------------
+
+Q2. Can Constructor return a value?
+
+Ans.
+
+No.
+
+------------------------------------------------
+
+Q3. Can Constructor be overloaded?
+
+Ans.
+
+Yes.
+
+------------------------------------------------
+
+Q4. Can Constructor be virtual?
+
+Ans.
+
+No.
+
+------------------------------------------------
+
+Q5. Can Constructor be private?
+
+Ans.
+
+Yes.
+
+Used in Singleton Design Pattern.
+
+------------------------------------------------
+
+Q6. Which Constructor is called automatically?
+
+Ans.
+
+The constructor matching the object creation.
+
+------------------------------------------------
+
+Q7. Which Constructor executes first in Inheritance?
+
+Ans.
+
+Parent Constructor
+
+↓
+
+Child Constructor
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+---------------------
+
+Easy
+
+1. Create a Student class with a Default Constructor.
+
+2. Print "Welcome" using Constructor.
+
+3. Store Name using Constructor.
+
+Medium
+
+4. Create Employee class using Parameterized Constructor.
+
+5. Create Rectangle class and calculate Area.
+
+6. Create Book class using Constructor Overloading.
+
+Hard
+
+7. Student Management System.
+
+8. Bank Account using Constructors.
+
+9. Library Management using Multiple Constructors.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+-------------
+
+Assignment 1
+
+Create Student Class
+
+Store
+
+Name
+
+Age
+
+Roll Number
+
+using Parameterized Constructor.
+
+Display all details.
+
+------------------------------------------------
+
+Assignment 2
+
+Create Employee Class
+
+Store
+
+Name
+
+Salary
+
+Department
+
+using Constructor.
+
+------------------------------------------------
+
+Assignment 3
+
+Create Circle Class.
+
+Input Radius using Constructor.
+
+Calculate Area and Circumference.
+
+------------------------------------------------
+
+Assignment 4
+
+Create Rectangle Class.
+
+Calculate Area using Constructor.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+----------
+
+✔ Constructor initializes an object.
+
+✔ Called automatically.
+
+✔ Same name as Class.
+
+✔ No Return Type.
+
+✔ Can be overloaded.
+
+✔ Types
+
+• Default Constructor
+
+• Parameterized Constructor
+
+• Copy Constructor
+
+✔ Parent Constructor executes before Child Constructor.
+
+✔ One of the most important concepts of OOP.
+
+--------------------------------------------------------------------------------
+
+🧠 Remember
+
+Object Created
+
+        ↓
+
+Constructor Called
+
+        ↓
+
+Variables Initialized
+
+        ↓
+
+Object Ready
+
+================================================================================
+                           END OF LESSON - 5
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+                               LESSON - 6
+                   CONSTRUCTOR OVERLOADING & COPY CONSTRUCTOR
+================================================================================
+
+📖 Definition
+-------------
+
+A class can have multiple constructors with different parameter lists.
+This feature is known as Constructor Overloading.
+
+A Copy Constructor is a special constructor that creates a new object
+by copying the values of an existing object.
+
+--------------------------------------------------------------------------------
+
+⭐ Constructor Overloading
+--------------------------
+
+Constructor Overloading means creating more than one constructor
+inside the same class with different parameters.
+
+The compiler decides which constructor to call based on
+the number and type of arguments.
+
+--------------------------------------------------------------------------------
+
+🧠 Real-Life Analogy
+--------------------
+
+Think of a Mobile Phone.
+
+You can buy it
+
+✔ Without Accessories
+
+✔ With Charger
+
+✔ With Charger + Earphones
+
+Same mobile
+
+Different ways to initialize.
+
+This is Constructor Overloading.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+                Student Class
+
+                     │
+
+        --------------------------------
+
+        Student()
+
+        Student(string)
+
+        Student(string,int)
+
+        Student(string,int,double)
+
+        --------------------------------
+
+                 Different Constructors
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+
+class Student
+{
+public:
+
+    Student();
+
+    Student(string);
+
+    Student(string,int);
+
+};
+
+--------------------------------------------------------------------------------
+
+💻 Example 1 : Constructor Overloading
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    Student()
+    {
+        cout<<"Default Constructor"<<endl;
+    }
+
+    Student(string name)
+    {
+        cout<<"Name : "<<name<<endl;
+    }
+
+    Student(string name,int age)
+    {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Age  : "<<age<<endl;
+    }
+};
+
+int main()
+{
+    Student s1;
+
+    Student s2("Mayank");
+
+    Student s3("Mayank",16);
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Default Constructor
+
+Name : Mayank
+
+Name : Mayank
+Age  : 16
+
+--------------------------------------------------------------------------------
+
+⭐ Copy Constructor
+------------------
+
+A Copy Constructor creates a new object by copying another object
+of the same class.
+
+Syntax
+
+ClassName(ClassName &obj)
+
+{
+
+}
+
+--------------------------------------------------------------------------------
+
+🧠 Why do we need Copy Constructor?
+-----------------------------------
+
+Suppose we already have an object.
+
+Student s1("Mayank",16);
+
+Now we want another object having exactly the same values.
+
+Instead of assigning each variable again,
+
+We simply write
+
+Student s2(s1);
+
+Everything gets copied automatically.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+           Object s1
+
+      Name = Mayank
+
+      Age  = 16
+
+            │
+
+            ▼
+
+     Copy Constructor
+
+            │
+
+            ▼
+
+           Object s2
+
+      Name = Mayank
+
+      Age  = 16
+
+--------------------------------------------------------------------------------
+
+💻 Example 2 : Compiler Generated Copy Constructor
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    string name;
+    int age;
+
+    Student(string n,int a)
+    {
+        name = n;
+        age = a;
+    }
+
+    void display()
+    {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Age  : "<<age<<endl;
+    }
+};
+
+int main()
+{
+    Student s1("Mayank",16);
+
+    Student s2(s1);
+
+    s2.display();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Name : Mayank
+
+Age  : 16
+
+--------------------------------------------------------------------------------
+
+💻 Example 3 : User Defined Copy Constructor
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    string name;
+    int age;
+
+    Student(string n,int a)
+    {
+        name = n;
+        age = a;
+    }
+
+    Student(const Student &obj)
+    {
+        name = obj.name;
+        age = obj.age;
+    }
+
+    void display()
+    {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Age  : "<<age<<endl;
+    }
+};
+
+int main()
+{
+    Student s1("Mayank",16);
+
+    Student s2(s1);
+
+    s2.display();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Name : Mayank
+
+Age  : 16
+
+--------------------------------------------------------------------------------
+
+⭐ Why use const Student &obj ?
+
+✔ No unnecessary copy is created.
+
+✔ Faster.
+
+✔ Prevents accidental modification.
+
+Professional C++ programmers generally write
+
+Student(const Student &obj)
+
+instead of
+
+Student(Student &obj)
+
+--------------------------------------------------------------------------------
+
+⭐ Difference Between Parameterized Constructor
+and Copy Constructor
+
+Parameterized Constructor
+
+✔ Receives Normal Values
+
+Student("Mayank",16);
+
+--------------------------------------------
+
+Copy Constructor
+
+✔ Receives Object
+
+Student(s1);
+
+--------------------------------------------------------------------------------
+
+⭐ Compiler Generated Copy Constructor
+
+If you do not write your own Copy Constructor,
+
+the compiler automatically creates one.
+
+It performs
+
+SHALLOW COPY
+
+which is sufficient for simple variables.
+
+For dynamic memory, you should write your own
+copy constructor to perform a DEEP COPY.
+
+(We'll study this later.)
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+-----------------
+
+❌ Wrong
+
+Student(Student obj)
+
+This creates another copy while passing the argument.
+
+Correct
+
+Student(const Student &obj)
+
+------------------------------------------------
+
+❌ Forgetting '&'
+
+Student(Student obj)
+
+Wrong
+
+Correct
+
+Student(const Student &obj)
+
+------------------------------------------------
+
+❌ Thinking
+
+Student s2 = s1;
+
+is assignment.
+
+Actually,
+
+During initialization,
+
+this also invokes the Copy Constructor.
+
+--------------------------------------------------------------------------------
+
+💡 Advantages
+-------------
+
+✔ Easy Object Copying
+
+✔ Cleaner Code
+
+✔ Saves Time
+
+✔ Essential for Dynamic Memory
+
+✔ Used in Professional Software
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+----------------------
+
+Q1. What is Constructor Overloading?
+
+Ans.
+
+Having multiple constructors with different parameter lists.
+
+------------------------------------------------
+
+Q2. What is a Copy Constructor?
+
+Ans.
+
+A constructor that creates a new object by copying an existing object.
+
+------------------------------------------------
+
+Q3. Syntax of Copy Constructor?
+
+Ans.
+
+ClassName(const ClassName &obj)
+
+------------------------------------------------
+
+Q4. Why pass object by reference?
+
+Ans.
+
+To avoid unnecessary copying.
+
+------------------------------------------------
+
+Q5. Who creates Copy Constructor if we don't?
+
+Ans.
+
+Compiler.
+
+------------------------------------------------
+
+Q6. What type of copy does compiler perform?
+
+Ans.
+
+Shallow Copy.
+
+------------------------------------------------
+
+Q7. What is Deep Copy?
+
+Ans.
+
+A copy where dynamically allocated memory is duplicated
+instead of sharing the same address.
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+---------------------
+
+Easy
+
+1. Create Constructor Overloading Example.
+
+2. Copy Student Object.
+
+3. Copy Employee Object.
+
+Medium
+
+4. Create Book class using Copy Constructor.
+
+5. Copy Rectangle Object.
+
+6. Copy Bank Account Object.
+
+Hard
+
+7. Student Management System.
+
+8. Employee Database.
+
+9. Dynamic Memory Copy Program.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+-------------
+
+1.
+
+Create Student Class.
+
+Create
+
+Default Constructor
+
+Parameterized Constructor
+
+Copy Constructor
+
+Display all data.
+
+--------------------------------------------
+
+2.
+
+Create Employee Class.
+
+Copy one employee into another.
+
+Display both.
+
+--------------------------------------------
+
+3.
+
+Create Book Class.
+
+Use Constructor Overloading.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+----------
+
+✔ Constructor Overloading allows multiple constructors.
+
+✔ Constructors differ by parameters.
+
+✔ Copy Constructor copies one object into another.
+
+✔ Standard Syntax
+
+ClassName(const ClassName &obj)
+
+✔ Compiler creates Copy Constructor automatically.
+
+✔ User-defined Copy Constructor is useful for Deep Copy.
+
+✔ Copy Constructor is one of the most frequently asked interview topics.
+
+--------------------------------------------------------------------------------
+
+🧠 Remember
+
+Student s1("Mayank",16);
+
+        │
+
+        ▼
+
+Student s2(s1);
+
+        │
+
+        ▼
+
+Copy Constructor Called
+
+================================================================================
+                           END OF LESSON - 6
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+                            LESSON - 7 & 8
+             STATIC MEMBERS & DYNAMIC OBJECT CREATION
+================================================================================
+
+################################################################################
+                         PART - 1 : STATIC MEMBERS
+################################################################################
+
+📖 Definition
+-------------
+
+A Static Data Member is a class member that is shared by all the objects
+of that class.
+
+Only ONE copy of the static variable exists in memory,
+regardless of how many objects are created.
+
+--------------------------------------------------------------------------------
+
+⭐ Key Points
+------------
+
+✔ Shared among all objects.
+
+✔ Memory allocated only once.
+
+✔ Declared using static keyword.
+
+✔ Defined outside the class.
+
+✔ Can be accessed using
+
+    ClassName::VariableName
+
+--------------------------------------------------------------------------------
+
+❓ Why Static Member?
+
+Normally
+
+Student s1;
+
+Student s2;
+
+Student s3;
+
+Each object has its own copy.
+
+But suppose we want to count
+
+Total Students
+
+The count should be common for all objects.
+
+Hence,
+
+Static Variable is used.
+
+--------------------------------------------------------------------------------
+
+🧠 Real Life Example
+-------------------
+
+Suppose
+
+School Name = DPS
+
+Every student studies in the same school.
+
+There is no need to store
+
+"DPS"
+
+inside every object.
+
+One common variable is enough.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+            Student Class
+
+           -------------------
+
+           Name
+
+           Roll
+
+           Age
+
+           -------------------
+
+           static SchoolName
+
+           static Count
+
+           -------------------
+
+              Shared By
+
+      s1      s2      s3
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+
+class Student
+{
+public:
+
+    static int count;
+
+};
+
+int Student::count = 0;
+
+--------------------------------------------------------------------------------
+
+💻 Example 1
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    static int count;
+
+    Student()
+    {
+        count++;
+    }
+};
+
+int Student::count = 0;
+
+int main()
+{
+    Student s1;
+    Student s2;
+    Student s3;
+
+    cout<<"Total Objects : "<<Student::count;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Total Objects : 3
+
+--------------------------------------------------------------------------------
+
+💻 Example 2
+
+#include<iostream>
+using namespace std;
+
+class Demo
+{
+public:
+
+    static int x;
+};
+
+int Demo::x = 100;
+
+int main()
+{
+    cout<<Demo::x;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+100
+
+--------------------------------------------------------------------------------
+
+⭐ Static Member Function
+
+A Static Member Function can access only static data members.
+
+Syntax
+
+class Demo
+{
+public:
+
+    static void show()
+    {
+
+    }
+};
+
+--------------------------------------------------------------------------------
+
+💻 Example 3
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    static int count;
+
+    Student()
+    {
+        count++;
+    }
+
+    static void totalStudents()
+    {
+        cout<<"Students : "<<count;
+    }
+};
+
+int Student::count = 0;
+
+int main()
+{
+    Student s1;
+    Student s2;
+
+    Student::totalStudents();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Students : 2
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages
+
+✔ Saves Memory
+
+✔ Shared Data
+
+✔ Faster Access
+
+✔ Useful for Counters
+
+✔ Useful for Common Information
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+
+❌ Forgetting Definition
+
+Wrong
+
+static int count;
+
+Correct
+
+int Student::count = 0;
+
+------------------------------------------------
+
+❌ Accessing using Object
+
+Correct Way
+
+Student::count
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+
+Q1. What is Static Variable?
+
+Q2. Why define Static Variable outside class?
+
+Q3. Can Static Function access non-static members?
+
+Ans.
+
+No.
+
+Q4. Is Static Variable shared?
+
+Ans.
+
+Yes.
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+
+1.
+
+Count Total Objects.
+
+2.
+
+Create Company Class.
+
+Store Company Name using Static Variable.
+
+3.
+
+Create Employee Counter.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+
+Create Library Class.
+
+Whenever a Book Object is created,
+
+Increase Total Books using Static Variable.
+
+================================================================================
+                    PART - 2 : DYNAMIC OBJECT CREATION
+================================================================================
+
+📖 Definition
+
+Dynamic Object Creation means creating objects during runtime
+using the new keyword.
+
+Objects are stored in Heap Memory.
+
+--------------------------------------------------------------------------------
+
+⭐ Key Points
+
+✔ Uses new keyword.
+
+✔ Stored in Heap Memory.
+
+✔ Accessed using Pointer.
+
+✔ Destroyed using delete.
+
+--------------------------------------------------------------------------------
+
+❓ Why Dynamic Object?
+
+Suppose you don't know
+
+How many Students
+
+will be created.
+
+Runtime allocation is required.
+
+Hence,
+
+Dynamic Objects are used.
+
+--------------------------------------------------------------------------------
+
+🧠 Real Life Example
+
+Imagine a Hotel.
+
+Rooms are allocated only when customers arrive.
+
+Similarly,
+
+Memory is allocated only when object is created.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+        Heap Memory
+
+    +--------------------+
+
+       Student Object
+
+    +--------------------+
+
+             ▲
+
+             │
+
+        Student *ptr
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+
+Student *ptr = new Student;
+
+delete ptr;
+
+--------------------------------------------------------------------------------
+
+💻 Example 1
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    string name;
+
+    Student()
+    {
+        name="Mayank";
+    }
+
+    void show()
+    {
+        cout<<name;
+    }
+};
+
+int main()
+{
+    Student *ptr = new Student;
+
+    ptr->show();
+
+    delete ptr;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Mayank
+
+--------------------------------------------------------------------------------
+
+💻 Example 2
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    int roll;
+
+    Student(int r)
+    {
+        roll = r;
+    }
+
+    void show()
+    {
+        cout<<roll;
+    }
+};
+
+int main()
+{
+    Student *ptr = new Student(16);
+
+    ptr->show();
+
+    delete ptr;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+16
+
+--------------------------------------------------------------------------------
+
+⭐ Arrow Operator (->)
+
+Pointer
+
+↓
+
+Object
+
+↓
+
+Member
+
+Example
+
+ptr->show();
+
+Equivalent to
+
+(*ptr).show();
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages
+
+✔ Runtime Memory Allocation
+
+✔ Flexible
+
+✔ Efficient Memory Usage
+
+✔ Used in Linked List
+
+✔ Used in Trees
+
+✔ Used in Graphs
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+
+❌ Forgetting delete
+
+Student *p = new Student;
+
+Memory Leak
+
+------------------------------------------------
+
+Correct
+
+delete p;
+
+------------------------------------------------
+
+❌ Using Dot Operator
+
+Wrong
+
+p.show();
+
+Correct
+
+p->show();
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+
+Q1. What is Dynamic Object?
+
+Q2. Difference between Stack and Heap?
+
+Q3. Why use new?
+
+Q4. Why delete?
+
+Q5. Difference between
+
+.
+
+and
+
+->
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+
+1.
+
+Create Dynamic Student Object.
+
+2.
+
+Create Dynamic Employee Object.
+
+3.
+
+Create Dynamic Car Object.
+
+4.
+
+Create Dynamic Bank Object.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+
+Create Student Class.
+
+Input
+
+Name
+
+Roll
+
+Marks
+
+Create Object Dynamically.
+
+Display Data.
+
+Delete Memory.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+
+✔ Static Variable
+
+Shared by all Objects.
+
+✔ Static Function
+
+Accesses only Static Members.
+
+✔ Dynamic Object
+
+Created using new.
+
+✔ delete
+
+Frees Heap Memory.
+
+✔ Arrow Operator
+
+Used with Pointer Objects.
+
+================================================================================
+                      END OF LESSON - 7 & 8
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+                            LESSON - 9 & 10
+                      THIS POINTER & DESTRUCTOR
+================================================================================
+
+################################################################################
+                         PART - 1 : THIS POINTER
+################################################################################
+
+📖 Definition
+-------------
+
+The "this" pointer is a special pointer automatically created for every
+non-static member function.
+
+It points to the current object that calls the member function.
+
+In simple words,
+
+this = Address of Current Object
+
+--------------------------------------------------------------------------------
+
+⭐ Key Points
+------------
+
+✔ Automatically created by compiler.
+
+✔ Available only inside member functions.
+
+✔ Points to current object.
+
+✔ Used to remove ambiguity between local and class variables.
+
+✔ Cannot be used inside static member functions.
+
+--------------------------------------------------------------------------------
+
+❓ Why do we need this Pointer?
+-------------------------------
+
+Consider
+
+class Student
+{
+public:
+
+    string name;
+
+    Student(string name)
+    {
+        name = name;
+    }
+};
+
+Both variables have the same name.
+
+Compiler gets confused.
+
+Here,
+
+this pointer solves the problem.
+
+--------------------------------------------------------------------------------
+
+🧠 Real Life Analogy
+-------------------
+
+Suppose a teacher says
+
+"Bring MY notebook."
+
+"My" refers to the teacher himself.
+
+Similarly,
+
+this refers to the current object.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+          Student s1
+
+        Name = Mayank
+
+              │
+
+              ▼
+
+        Student()
+
+              │
+
+              ▼
+
+this ---------> s1
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+
+this->variable = variable;
+
+--------------------------------------------------------------------------------
+
+💻 Example 1
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    string name;
+    int age;
+
+    Student(string name,int age)
+    {
+        this->name = name;
+        this->age = age;
+    }
+
+    void display()
+    {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Age  : "<<age;
+    }
+};
+
+int main()
+{
+    Student s("Mayank",16);
+
+    s.display();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Name : Mayank
+
+Age  : 16
+
+--------------------------------------------------------------------------------
+
+💻 Example 2
+
+#include<iostream>
+using namespace std;
+
+class Demo
+{
+public:
+
+    int x;
+
+    void setValue(int x)
+    {
+        this->x = x;
+    }
+
+    void show()
+    {
+        cout<<x;
+    }
+};
+
+int main()
+{
+    Demo d;
+
+    d.setValue(100);
+
+    d.show();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+100
+
+--------------------------------------------------------------------------------
+
+⭐ Uses of this Pointer
+
+✔ Resolves name conflict.
+
+✔ Returns current object.
+
+✔ Supports method chaining.
+
+✔ Used in constructors.
+
+✔ Used in operator overloading.
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+
+❌ Wrong
+
+name = name;
+
+Both refer to local variable.
+
+------------------------------------------------
+
+Correct
+
+this->name = name;
+
+------------------------------------------------
+
+❌ Using this inside static function
+
+Wrong
+
+static void show()
+{
+    this->x = 10;
+}
+
+Reason
+
+Static functions have no object.
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+
+Q1. What is this pointer?
+
+Ans.
+
+A pointer that stores the address of the current object.
+
+------------------------------------------------
+
+Q2. Is this pointer available in static functions?
+
+Ans.
+
+No.
+
+------------------------------------------------
+
+Q3. Can we modify object using this pointer?
+
+Ans.
+
+Yes.
+
+------------------------------------------------
+
+Q4. What is the type of this pointer?
+
+Ans.
+
+ClassName *const this
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+
+1.
+
+Create Student class using this pointer.
+
+2.
+
+Create Employee class.
+
+3.
+
+Create Book class.
+
+4.
+
+Create Bank Account.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+
+Create Car class.
+
+Store
+
+Company
+
+Model
+
+Price
+
+using this pointer.
+
+Display details.
+
+================================================================================
+                           PART - 2 : DESTRUCTOR
+================================================================================
+
+📖 Definition
+-------------
+
+A Destructor is a special member function that is automatically called
+when an object is destroyed.
+
+It is mainly used to release resources such as memory, files,
+or database connections.
+
+--------------------------------------------------------------------------------
+
+⭐ Key Points
+------------
+
+✔ Same name as class.
+
+✔ Starts with ~
+
+✔ No return type.
+
+✔ No parameters.
+
+✔ Automatically called.
+
+✔ Only one destructor per class.
+
+✔ Cannot be overloaded.
+
+--------------------------------------------------------------------------------
+
+❓ Why Destructor?
+------------------
+
+Suppose an object allocates memory dynamically.
+
+After finishing the work,
+
+memory should be released.
+
+Destructor performs this cleanup automatically.
+
+--------------------------------------------------------------------------------
+
+🧠 Real Life Analogy
+-------------------
+
+Constructor
+
+↓
+
+Entering a Classroom.
+
+You arrange everything.
+
+----------------------------------------
+
+Destructor
+
+↓
+
+Leaving the Classroom.
+
+You switch off lights,
+
+close windows,
+
+clean everything.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+Object Created
+
+↓
+
+Constructor Called
+
+↓
+
+Program Executes
+
+↓
+
+Object Goes Out of Scope
+
+↓
+
+Destructor Called
+
+↓
+
+Memory Released
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+
+~Student()
+{
+
+}
+
+--------------------------------------------------------------------------------
+
+💻 Example 1
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+
+    Student()
+    {
+        cout<<"Constructor Called"<<endl;
+    }
+
+    ~Student()
+    {
+        cout<<"Destructor Called";
+    }
+};
+
+int main()
+{
+    Student s;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Constructor Called
+
+Destructor Called
+
+--------------------------------------------------------------------------------
+
+💻 Example 2
+
+#include<iostream>
+using namespace std;
+
+class Test
+{
+public:
+
+    Test()
+    {
+        cout<<"Object Created"<<endl;
+    }
+
+    ~Test()
+    {
+        cout<<"Object Destroyed"<<endl;
+    }
+};
+
+int main()
+{
+    Test t1;
+
+    {
+        Test t2;
+    }
+
+    cout<<"Main Function"<<endl;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Object Created
+
+Object Created
+
+Object Destroyed
+
+Main Function
+
+Object Destroyed
+
+--------------------------------------------------------------------------------
+
+⭐ Constructor vs Destructor
+
+Constructor
+
+✔ Initializes Object
+
+✔ Same Name as Class
+
+✔ No ~
+
+✔ Can be overloaded
+
+✔ Called First
+
+------------------------------------------
+
+Destructor
+
+✔ Cleans Object
+
+✔ Begins with ~
+
+✔ Cannot be overloaded
+
+✔ Called Last
+
+--------------------------------------------------------------------------------
+
+⭐ Destructor in Inheritance
+
+Parent Class
+
+↓
+
+Child Class
+
+Construction
+
+Parent
+
+↓
+
+Child
+
+------------------------------------------
+
+Destruction
+
+Child
+
+↓
+
+Parent
+
+--------------------------------------------------------------------------------
+
+💻 Example
+
+#include<iostream>
+using namespace std;
+
+class A
+{
+public:
+
+    ~A()
+    {
+        cout<<"Parent Destructor"<<endl;
+    }
+};
+
+class B : public A
+{
+public:
+
+    ~B()
+    {
+        cout<<"Child Destructor"<<endl;
+    }
+};
+
+int main()
+{
+    B obj;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Child Destructor
+
+Parent Destructor
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages
+
+✔ Frees Memory.
+
+✔ Prevents Memory Leak.
+
+✔ Automatically Called.
+
+✔ Cleans Resources.
+
+✔ Better Memory Management.
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+
+❌ Giving Return Type
+
+void ~Student()
+
+Wrong
+
+------------------------------------------------
+
+Correct
+
+~Student()
+
+------------------------------------------------
+
+❌ Passing Parameters
+
+~Student(int x)
+
+Wrong
+
+Destructor never takes parameters.
+
+------------------------------------------------
+
+❌ Creating Multiple Destructors
+
+Not Allowed.
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+
+Q1. What is Destructor?
+
+Ans.
+
+A special function automatically called when an object is destroyed.
+
+------------------------------------------------
+
+Q2. Can Destructor be overloaded?
+
+Ans.
+
+No.
+
+------------------------------------------------
+
+Q3. Can Destructor have parameters?
+
+Ans.
+
+No.
+
+------------------------------------------------
+
+Q4. Can Destructor return a value?
+
+Ans.
+
+No.
+
+------------------------------------------------
+
+Q5. Which executes first in destruction?
+
+Ans.
+
+Child Destructor
+
+↓
+
+Parent Destructor
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+
+1.
+
+Create Student Destructor.
+
+2.
+
+Print Goodbye using Destructor.
+
+3.
+
+Create Employee Destructor.
+
+4.
+
+Demonstrate Constructor and Destructor together.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+
+Create Student Class.
+
+Display
+
+Object Created
+
+inside Constructor.
+
+Display
+
+Object Destroyed
+
+inside Destructor.
+
+Create three objects and observe
+the order of constructor and destructor calls.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+
+✔ this pointer stores the address of the current object.
+
+✔ this pointer resolves variable name conflicts.
+
+✔ Destructor automatically destroys objects.
+
+✔ Destructor starts with ~.
+
+✔ Only one destructor is allowed.
+
+✔ Constructor executes first.
+
+✔ Destructor executes last.
+
+✔ In inheritance
+
+Constructor
+
+Parent → Child
+
+Destructor
+
+Child → Parent
+
+================================================================================
+                      END OF LESSON - 9 & 10
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+                               LESSON - 11
+                               INHERITANCE
+================================================================================
+
+📖 Definition
+-------------
+
+Inheritance is an Object-Oriented Programming (OOP) feature in which one
+class acquires the properties (data members) and behaviors (member functions)
+of another class.
+
+The existing class is called the Base Class (Parent Class), and the new
+class is called the Derived Class (Child Class).
+
+Inheritance promotes Code Reusability.
+
+--------------------------------------------------------------------------------
+
+⭐ Key Points
+------------
+
+✔ Reuse existing code.
+
+✔ Avoid code duplication.
+
+✔ Child class inherits properties of parent class.
+
+✔ Supports Hierarchical Relationships.
+
+✔ Makes programs easier to maintain.
+
+✔ One of the four pillars of OOP.
+
+--------------------------------------------------------------------------------
+
+❓ Why do we need Inheritance?
+------------------------------
+
+Suppose we have two classes.
+
+Student
+
+Name
+
+Age
+
+Roll Number
+
+Teacher
+
+Name
+
+Age
+
+Salary
+
+Notice that
+
+Name
+
+Age
+
+are common.
+
+Instead of writing them twice,
+
+we create
+
+Person Class
+
+↓
+
+Student inherits Person.
+
+Teacher inherits Person.
+
+Thus,
+
+Code Reusability is achieved.
+
+--------------------------------------------------------------------------------
+
+🧠 Real-Life Analogy
+--------------------
+
+Consider a Family.
+
+Grandfather
+
+↓
+
+Father
+
+↓
+
+Son
+
+The Son inherits
+
+✔ Family Name
+
+✔ Property
+
+✔ Habits
+
+Similarly,
+
+A Child Class inherits the members of its Parent Class.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+               Parent Class
+
+                 Person
+
+              +-----------+
+
+              | Name      |
+
+              | Age       |
+
+              +-----------+
+
+                    ▲
+
+                    │
+
+             Inherits
+
+                    │
+
+          +-----------------+
+
+          | Student         |
+
+          | Roll Number     |
+
+          +-----------------+
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+---------
+
+class Parent
+{
+public:
+
+    // Data Members
+
+};
+
+class Child : public Parent
+{
+
+};
+
+--------------------------------------------------------------------------------
+
+⚙ Working
+----------
+
+Step 1
+
+Create Parent Class.
+
+↓
+
+Step 2
+
+Create Child Class.
+
+↓
+
+Step 3
+
+Use Colon (:)
+
+↓
+
+Step 4
+
+Mention Access Mode
+
+↓
+
+Step 5
+
+Parent Members become available in Child Class.
+
+--------------------------------------------------------------------------------
+
+💻 Example 1 : Single Inheritance
+
+#include<iostream>
+using namespace std;
+
+class Person
+{
+public:
+
+    string name;
+    int age;
+};
+
+class Student : public Person
+{
+public:
+
+    int roll;
+
+    void display()
+    {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Age  : "<<age<<endl;
+        cout<<"Roll : "<<roll;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.name = "Mayank";
+    s.age = 16;
+    s.roll = 1;
+
+    s.display();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Name : Mayank
+
+Age  : 16
+
+Roll : 1
+
+--------------------------------------------------------------------------------
+
+⭐ Terminology
+-------------
+
+Base Class
+
+↓
+
+Parent Class
+
+↓
+
+Superclass
+
+--------------------------------------------
+
+Derived Class
+
+↓
+
+Child Class
+
+↓
+
+Subclass
+
+--------------------------------------------------------------------------------
+
+📊 Types of Inheritance
+
+1.
+
+Single Inheritance
+
+Parent
+
+↓
+
+Child
+
+--------------------------------------------
+
+2.
+
+Multilevel Inheritance
+
+Grandparent
+
+↓
+
+Parent
+
+↓
+
+Child
+
+--------------------------------------------
+
+3.
+
+Multiple Inheritance
+
+Parent A
+
+   +
+
+Parent B
+
+↓
+
+Child
+
+--------------------------------------------
+
+4.
+
+Hierarchical Inheritance
+
+        Parent
+
+      /       \
+
+ Child1      Child2
+
+--------------------------------------------
+
+5.
+
+Hybrid Inheritance
+
+Combination of
+
+Multiple
+
++
+
+Multilevel
+
++
+
+Hierarchical
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages
+------------
+
+✔ Code Reusability
+
+✔ Less Coding
+
+✔ Easy Maintenance
+
+✔ Better Organization
+
+✔ Supports Polymorphism
+
+✔ Faster Development
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+-----------------
+
+❌ Forgetting Access Mode
+
+Wrong
+
+class Student : Person
+
+Correct
+
+class Student : public Person
+
+------------------------------------------------
+
+❌ Accessing Private Members
+
+Private members of Parent Class
+
+cannot be accessed directly by Child Class.
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+----------------------
+
+Q1. What is Inheritance?
+
+Ans.
+
+Inheritance is the process of acquiring properties
+and functions from another class.
+
+------------------------------------------------
+
+Q2. Why do we use Inheritance?
+
+Ans.
+
+For Code Reusability.
+
+------------------------------------------------
+
+Q3. Name the five types of Inheritance.
+
+Ans.
+
+✔ Single
+
+✔ Multilevel
+
+✔ Multiple
+
+✔ Hierarchical
+
+✔ Hybrid
+
+------------------------------------------------
+
+Q4. Which class is inherited?
+
+Ans.
+
+Parent (Base) Class.
+
+------------------------------------------------
+
+Q5. Which class inherits?
+
+Ans.
+
+Child (Derived) Class.
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+---------------------
+
+Easy
+
+1.
+
+Create Person → Student.
+
+2.
+
+Create Animal → Dog.
+
+3.
+
+Create Vehicle → Car.
+
+Medium
+
+4.
+
+Create Employee → Manager.
+
+5.
+
+Create School → Teacher.
+
+6.
+
+Create Mobile → Smartphone.
+
+Hard
+
+7.
+
+Hospital Management System.
+
+8.
+
+Bank Management System.
+
+9.
+
+Library Management System.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+-------------
+
+1.
+
+Create a Person class.
+
+Store
+
+Name
+
+Age
+
+Create Student class.
+
+Store
+
+Roll Number
+
+Display complete information.
+
+------------------------------------------------
+
+2.
+
+Create Vehicle class.
+
+Create Car class.
+
+Store
+
+Company
+
+Model
+
+Price
+
+Display complete details.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+----------
+
+✔ Inheritance means acquiring properties of another class.
+
+✔ Parent Class is also called Base Class.
+
+✔ Child Class is also called Derived Class.
+
+✔ Inheritance improves Code Reusability.
+
+✔ There are five types of Inheritance.
+
+✔ Child class can access Parent's public and protected members.
+
+================================================================================
+                         END OF LESSON - 11 (PART 1)
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+                         LESSON - 11 (PART - 2)
+                   ACCESS MODES IN INHERITANCE
+================================================================================
+
+📖 Definition
+-------------
+
+When a class inherits another class, the inheritance mode decides
+how the members of the parent class are inherited.
+
+There are three inheritance modes:
+
+1. Public Inheritance
+
+2. Private Inheritance
+
+3. Protected Inheritance
+
+--------------------------------------------------------------------------------
+
+⭐ Parent Class Members
+
+A Parent Class can contain
+
+✔ Public Members
+
+✔ Protected Members
+
+✔ Private Members
+
+Private members are NEVER inherited directly.
+
+--------------------------------------------------------------------------------
+
+📊 Inheritance Access Table
+
+==========================================================================
+ Parent Member      Public       Private       Protected
+==========================================================================
+ Public             Public       Private       Protected
+
+ Protected          Protected    Private       Protected
+
+ Private          Not Accessible Not Accessible Not Accessible
+==========================================================================
+
+⭐ This is one of the MOST IMPORTANT interview tables.
+
+--------------------------------------------------------------------------------
+
+🧠 Memory Trick
+
+PRIVATE
+
+↓
+
+Never inherited directly.
+
+Remember
+
+Private means
+
+"My Secret"
+
+Only the Parent Class can use it.
+
+--------------------------------------------------------------------------------
+
+################################################################################
+                     1. PUBLIC INHERITANCE
+################################################################################
+
+📖 Definition
+
+When a class inherits using
+
+public
+
+then
+
+Public  → Public
+
+Protected → Protected
+
+Private → Not Accessible
+
+Syntax
+
+class Child : public Parent
+{
+
+};
+
+--------------------------------------------------------------------------------
+
+💻 Example
+
+#include<iostream>
+using namespace std;
+
+class Person
+{
+public:
+
+    string name="Mayank";
+
+protected:
+
+    int age=16;
+};
+
+class Student : public Person
+{
+public:
+
+    void show()
+    {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Age  : "<<age;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.show();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Name : Mayank
+
+Age  : 16
+
+--------------------------------------------------------------------------------
+
+################################################################################
+                     2. PRIVATE INHERITANCE
+################################################################################
+
+📖 Definition
+
+When inheritance is private,
+
+Public
+
+↓
+
+Private
+
+Protected
+
+↓
+
+Private
+
+Private
+
+↓
+
+Not Accessible
+
+Syntax
+
+class Child : private Parent
+{
+
+};
+
+--------------------------------------------------------------------------------
+
+💻 Example
+
+#include<iostream>
+using namespace std;
+
+class Person
+{
+public:
+
+    string name="Mayank";
+};
+
+class Student : private Person
+{
+public:
+
+    void show()
+    {
+        cout<<name;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.show();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Mayank
+
+Notice
+
+Outside the class,
+
+s.name
+
+❌ Error
+
+Because it became Private.
+
+--------------------------------------------------------------------------------
+
+################################################################################
+                    3. PROTECTED INHERITANCE
+################################################################################
+
+📖 Definition
+
+Public
+
+↓
+
+Protected
+
+Protected
+
+↓
+
+Protected
+
+Private
+
+↓
+
+Not Accessible
+
+--------------------------------------------------------------------------------
+
+💻 Example
+
+#include<iostream>
+using namespace std;
+
+class Person
+{
+public:
+
+    string name="Mayank";
+};
+
+class Student : protected Person
+{
+public:
+
+    void display()
+    {
+        cout<<name;
+    }
+};
+
+int main()
+{
+    Student s;
+
+    s.display();
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Mayank
+
+Again,
+
+Outside the class
+
+s.name
+
+❌ Error
+
+--------------------------------------------------------------------------------
+
+################################################################################
+                  CONSTRUCTOR IN INHERITANCE
+################################################################################
+
+Rule
+
+Whenever an object is created,
+
+Parent Constructor
+
+executes first.
+
+Then
+
+Child Constructor.
+
+--------------------------------------------------------------------------------
+
+💻 Example
+
+#include<iostream>
+using namespace std;
+
+class Parent
+{
+public:
+
+    Parent()
+    {
+        cout<<"Parent Constructor"<<endl;
+    }
+};
+
+class Child : public Parent
+{
+public:
+
+    Child()
+    {
+        cout<<"Child Constructor"<<endl;
+    }
+};
+
+int main()
+{
+    Child obj;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Parent Constructor
+
+Child Constructor
+
+--------------------------------------------------------------------------------
+
+🧠 Memory Diagram
+
+Object Created
+
+↓
+
+Parent Constructor
+
+↓
+
+Child Constructor
+
+↓
+
+Object Ready
+
+--------------------------------------------------------------------------------
+
+################################################################################
+                  DESTRUCTOR IN INHERITANCE
+################################################################################
+
+Rule
+
+Whenever an object is destroyed,
+
+Child Destructor
+
+executes first.
+
+Then
+
+Parent Destructor.
+
+--------------------------------------------------------------------------------
+
+💻 Example
+
+#include<iostream>
+using namespace std;
+
+class Parent
+{
+public:
+
+    ~Parent()
+    {
+        cout<<"Parent Destructor"<<endl;
+    }
+};
+
+class Child : public Parent
+{
+public:
+
+    ~Child()
+    {
+        cout<<"Child Destructor"<<endl;
+    }
+};
+
+int main()
+{
+    Child obj;
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Child Destructor
+
+Parent Destructor
+
+--------------------------------------------------------------------------------
+
+🧠 Memory Diagram
+
+Object Destroyed
+
+↓
+
+Child Destructor
+
+↓
+
+Parent Destructor
+
+↓
+
+Memory Released
+
+--------------------------------------------------------------------------------
+
+⭐ Constructor vs Destructor Order
+
+Constructor
+
+Parent
+
+↓
+
+Child
+
+---------------------------------------
+
+Destructor
+
+Child
+
+↓
+
+Parent
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages of Inheritance
+
+✔ Code Reusability
+
+✔ Less Coding
+
+✔ Easy Maintenance
+
+✔ Faster Development
+
+✔ Better Organization
+
+✔ Supports Polymorphism
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+
+❌ Trying to access Parent's Private Members.
+
+Not Allowed.
+
+----------------------------------------
+
+❌ Forgetting Access Mode.
+
+Always write
+
+public
+
+private
+
+or
+
+protected
+
+----------------------------------------
+
+❌ Thinking Child Constructor executes first.
+
+Wrong.
+
+Parent Constructor always executes first.
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+
+Q1.
+
+Can Child Class access Parent's Private Members?
+
+Ans.
+
+No.
+
+------------------------------------------------
+
+Q2.
+
+Which Constructor executes first?
+
+Ans.
+
+Parent Constructor.
+
+------------------------------------------------
+
+Q3.
+
+Which Destructor executes first?
+
+Ans.
+
+Child Destructor.
+
+------------------------------------------------
+
+Q4.
+
+Which inheritance mode is used most?
+
+Ans.
+
+Public Inheritance.
+
+------------------------------------------------
+
+Q5.
+
+Which members are never inherited directly?
+
+Ans.
+
+Private Members.
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+
+Easy
+
+1.
+
+Create Parent → Child.
+
+2.
+
+Demonstrate Public Inheritance.
+
+3.
+
+Print Parent Variable.
+
+----------------------------------------
+
+Medium
+
+4.
+
+Demonstrate Private Inheritance.
+
+5.
+
+Demonstrate Protected Inheritance.
+
+6.
+
+Show Constructor Order.
+
+----------------------------------------
+
+Hard
+
+7.
+
+School Management.
+
+8.
+
+Hospital Management.
+
+9.
+
+Bank Management.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+
+1.
+
+Create Person Class.
+
+↓
+
+Student Class.
+
+↓
+
+Graduate Class.
+
+Display all inherited members.
+
+----------------------------------------
+
+2.
+
+Create Parent Constructor.
+
+Create Child Constructor.
+
+Observe execution order.
+
+----------------------------------------
+
+3.
+
+Create Parent Destructor.
+
+Create Child Destructor.
+
+Observe destruction order.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+
+✔ Public Inheritance
+
+Public → Public
+
+Protected → Protected
+
+----------------------------------------
+
+✔ Private Inheritance
+
+Public → Private
+
+Protected → Private
+
+----------------------------------------
+
+✔ Protected Inheritance
+
+Public → Protected
+
+Protected → Protected
+
+----------------------------------------
+
+✔ Private Members are never inherited directly.
+
+✔ Parent Constructor executes first.
+
+✔ Child Destructor executes first.
+
+✔ Public Inheritance is used most in real-world programs.
+
+================================================================================
+                    END OF LESSON - 11 (PART - 2)
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+                               LESSON - 12
+                            FRIEND FUNCTION
+================================================================================
+
+📖 Definition
+-------------
+
+A Friend Function is a function that is NOT a member of a class,
+but it is allowed to access the private and protected members
+of that class.
+
+Normally, only member functions can access private data.
+A Friend Function is an exception to this rule.
+
+--------------------------------------------------------------------------------
+
+⭐ Key Points
+------------
+
+✔ Not a member of the class.
+
+✔ Declared using the friend keyword.
+
+✔ Can access private members.
+
+✔ Can access protected members.
+
+✔ Called like a normal function.
+
+✔ Has no this pointer.
+
+--------------------------------------------------------------------------------
+
+❓ Why do we need Friend Function?
+---------------------------------
+
+Suppose two classes need to share their private data.
+
+Without Friend Function,
+
+outside functions cannot access private members.
+
+Friend Function solves this problem.
+
+--------------------------------------------------------------------------------
+
+🧠 Real-Life Analogy
+-------------------
+
+Imagine a Bank Locker.
+
+Normally,
+
+Only the Owner can open it.
+
+But the owner gives special permission
+to the Bank Manager.
+
+The manager can also access the locker.
+
+Similarly,
+
+Friend Function gets special permission
+to access private members.
+
+--------------------------------------------------------------------------------
+
+📊 Diagram
+
+               Student Class
+
+        --------------------------
+
+        Private Data
+
+        Name
+
+        Marks
+
+        --------------------------
+
+             friend show()
+
+                    │
+
+                    ▼
+
+      Can Access Private Members
+
+--------------------------------------------------------------------------------
+
+📝 Syntax
+---------
+
+class Student
+{
+private:
+
+    int marks;
+
+public:
+
+    friend void show(Student);
+
+};
+
+--------------------------------------------------------------------------------
+
+⚙ Working
+----------
+
+Create Object
+
+↓
+
+Pass Object to Friend Function
+
+↓
+
+Friend Function accesses private members
+
+↓
+
+Display Result
+
+--------------------------------------------------------------------------------
+
+💻 Example 1 : Print Private Variable
+
+#include<iostream>
+using namespace std;
+
+class Student
+{
+private:
+
+    int marks = 95;
+
+public:
+
+    friend void show(Student);
+};
+
+void show(Student s)
+{
+    cout<<"Marks : "<<s.marks;
+}
+
+int main()
+{
+    Student s;
+
+    show(s);
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Marks : 95
+
+--------------------------------------------------------------------------------
+
+💻 Example 2 : Square of a Number
+
+#include<iostream>
+using namespace std;
+
+class Square
+{
+private:
+
+    int num = 8;
+
+public:
+
+    friend void display(Square);
+};
+
+void display(Square s)
+{
+    cout<<"Square = "<<s.num*s.num;
+}
+
+int main()
+{
+    Square obj;
+
+    display(obj);
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Square = 64
+
+--------------------------------------------------------------------------------
+
+💻 Example 3 : Largest Number
+
+#include<iostream>
+using namespace std;
+
+class Largest
+{
+private:
+
+    int a,b;
+
+public:
+
+    Largest(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+
+    friend void check(Largest);
+};
+
+void check(Largest obj)
+{
+    if(obj.a>obj.b)
+        cout<<"Largest = "<<obj.a;
+    else
+        cout<<"Largest = "<<obj.b;
+}
+
+int main()
+{
+    Largest l(25,40);
+
+    check(l);
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Largest = 40
+
+--------------------------------------------------------------------------------
+
+💻 Example 4 : Swapping Two Numbers
+
+#include<iostream>
+using namespace std;
+
+class Swap
+{
+private:
+
+    int a,b;
+
+public:
+
+    Swap(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+
+    friend void exchange(Swap);
+};
+
+void exchange(Swap obj)
+{
+    int temp=obj.a;
+    obj.a=obj.b;
+    obj.b=temp;
+
+    cout<<"A = "<<obj.a<<endl;
+    cout<<"B = "<<obj.b;
+}
+
+int main()
+{
+    Swap s(10,20);
+
+    exchange(s);
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+A = 20
+
+B = 10
+
+--------------------------------------------------------------------------------
+
+💻 Example 5 : Friend Function with Two Classes
+
+#include<iostream>
+using namespace std;
+
+class B;
+
+class A
+{
+private:
+
+    int x=10;
+
+public:
+
+    friend void sum(A,B);
+};
+
+class B
+{
+private:
+
+    int y=20;
+
+public:
+
+    friend void sum(A,B);
+};
+
+void sum(A a,B b)
+{
+    cout<<"Sum = "<<a.x+b.y;
+}
+
+int main()
+{
+    A obj1;
+
+    B obj2;
+
+    sum(obj1,obj2);
+
+    return 0;
+}
+
+--------------------------------------------------------------------------------
+
+📤 Output
+
+Sum = 30
+
+--------------------------------------------------------------------------------
+
+📊 Memory Diagram
+
+         Object
+
+            │
+
+            ▼
+
+     Friend Function
+
+            │
+
+            ▼
+
+Access Private Members
+
+            │
+
+            ▼
+
+Display Result
+
+--------------------------------------------------------------------------------
+
+⭐ Friend Class
+
+A Friend Class can access all private
+members of another class.
+
+Syntax
+
+class B;
+
+class A
+{
+    friend class B;
+};
+
+--------------------------------------------------------------------------------
+
+⭐ Friend Function vs Member Function
+
+Friend Function
+
+✔ Outside Class
+
+✔ Uses Object
+
+✔ No this Pointer
+
+✔ Declared with friend
+
+--------------------------------------------
+
+Member Function
+
+✔ Inside Class
+
+✔ Called using Object
+
+✔ Uses this Pointer
+
+✔ No friend Keyword
+
+--------------------------------------------------------------------------------
+
+⭐ Advantages
+
+✔ Access Private Data
+
+✔ Easy Communication Between Classes
+
+✔ Reduces Complexity
+
+✔ Useful in Operator Overloading
+
+✔ Useful in Mathematical Operations
+
+--------------------------------------------------------------------------------
+
+⚠ Common Mistakes
+-----------------
+
+❌ Forgetting friend Keyword
+
+Wrong
+
+void show(Student);
+
+Correct
+
+friend void show(Student);
+
+------------------------------------------------
+
+❌ Calling Friend Function using Object
+
+Wrong
+
+obj.show();
+
+Correct
+
+show(obj);
+
+------------------------------------------------
+
+❌ Thinking Friend Function is a Member
+
+Wrong
+
+Friend Function is NOT a member.
+
+--------------------------------------------------------------------------------
+
+🎤 Interview Questions
+----------------------
+
+Q1. What is a Friend Function?
+
+Ans.
+
+A non-member function that can access
+private and protected members.
+
+------------------------------------------------
+
+Q2. Is Friend Function a member of the class?
+
+Ans.
+
+No.
+
+------------------------------------------------
+
+Q3. Which keyword is used?
+
+Ans.
+
+friend
+
+------------------------------------------------
+
+Q4. Can Friend Function access private members?
+
+Ans.
+
+Yes.
+
+------------------------------------------------
+
+Q5. Does Friend Function have this pointer?
+
+Ans.
+
+No.
+
+------------------------------------------------
+
+Q6. Can one Friend Function be friend of multiple classes?
+
+Ans.
+
+Yes.
+
+--------------------------------------------------------------------------------
+
+📝 Practice Questions
+---------------------
+
+Easy
+
+1.
+
+Print Private Variable.
+
+2.
+
+Find Square.
+
+3.
+
+Find Cube.
+
+----------------------------------------
+
+Medium
+
+4.
+
+Swap Two Numbers.
+
+5.
+
+Find Largest Number.
+
+6.
+
+Find Average of Two Numbers.
+
+----------------------------------------
+
+Hard
+
+7.
+
+Friend Function using Two Classes.
+
+8.
+
+Employee Salary Calculator.
+
+9.
+
+Bank Account System.
+
+--------------------------------------------------------------------------------
+
+🎯 Assignment
+-------------
+
+1.
+
+Create Student Class.
+
+Store
+
+Name
+
+Marks
+
+Display them using Friend Function.
+
+----------------------------------------
+
+2.
+
+Create Calculator Class.
+
+Find
+
+Addition
+
+Subtraction
+
+Multiplication
+
+using Friend Function.
+
+----------------------------------------
+
+3.
+
+Create Classes A and B.
+
+Store two private numbers.
+
+Print their Sum using one Friend Function.
+
+--------------------------------------------------------------------------------
+
+📌 Summary
+----------
+
+✔ Friend Function is NOT a member function.
+
+✔ Declared using friend keyword.
+
+✔ Can access private member s.
+
+✔ Called like a normal function.
+
+✔ Has no this pointer.
+
+✔ Can be friend of multiple classes.
+
+✔ Useful when two classes need to share data.
+
+================================================================================
+                          END OF LESSON - 12
+================================================================================
+*/
